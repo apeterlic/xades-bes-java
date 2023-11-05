@@ -25,7 +25,7 @@ class XAdESSignerTest {
 
     @Test
     void testXmlSigning() throws Exception {
-        final byte[] encoded = this.getClass().getResourceAsStream("/xades/correct-message.xml").readAllBytes();
+        final byte[] encoded = this.getClass().getResourceAsStream("/xades/cm1.xml").readAllBytes();
         System.setProperty("com.sun.org.apache.xml.internal.security.ignoreLineBreaks", "true");
 
         final String certificateFilePath = getResourceFileAsString("/certificate.cer");

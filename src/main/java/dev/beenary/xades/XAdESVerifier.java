@@ -1,7 +1,7 @@
 package dev.beenary.xades;
 
-import dev.beenary.util.XAdESUtil;
 import dev.beenary.util.Defense;
+import dev.beenary.util.XAdESUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -41,11 +41,22 @@ public class XAdESVerifier implements Verifier {
 
     private PublicKey currentPublicKey;
 
+    private static void addIdToTagElements(final Document document) {
+        final NodeList nodeList = document.getElementsByTagName("DPI_OECD");
+        if (nodeList != null && nodeList.getLength() > 0) {
+            for (int i = 0; i < nodeList.getLength(); ++i) {
+                final Element element = (Element) nodeList.item(i);
+                if (element != null) {
+                    element.setIdAttribute(XAdESUtil.ATTRIBUTE_ID, true);
+                }
+            }
+        }
+    }
 
     @Override
     public boolean verify(final Document document, final List<X509Certificate> certificates)
             throws MarshalException, XMLSignatureException {
-
+        addIdToTagElements(document);
         final NodeList nodeListSignature = document.getElementsByTagNameNS(XMLSignature.XMLNS,
                 XAdESUtil.TAG_SIGNATURE);
         if (nodeListSignature.getLength() == 0) {

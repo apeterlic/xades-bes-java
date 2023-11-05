@@ -155,30 +155,31 @@ public class XAdESSigner implements Signer {
                 (TransformParameterSpec) null);
 
         final List<Transform> transforms = List.of(sigTransform, canTransform);
-        final Reference referenceDoc = xmlSignatureFactory.newReference("", digestMethod, transforms, null, null);
-       // final Reference referenceQuP = xmlSignatureFactory.newReference("#DPI_OECD" ,
-        //        xmlSignatureFactory.newDigestMethod(XAdESUtil.DIGEST_ALGORITHM, null));
+       // final Reference referenceDoc = xmlSignatureFactory.newReference("#DPI_OECD", digestMethod, transforms, null,
+           //     null);
+        final Reference referenceQuP = xmlSignatureFactory.newReference("#DPI_OECD" ,
+                xmlSignatureFactory.newDigestMethod(XAdESUtil.DIGEST_ALGORITHM, null));
 
-        final List<Reference> references = List.of(referenceDoc);
+        final List<Reference> references = List.of(referenceQuP);
         final SignedInfo signedInfo = xmlSignatureFactory.newSignedInfo(c14nMethod, signMethod, references);
 
         final KeyInfoFactory keyInfoFactory = xmlSignatureFactory.getKeyInfoFactory();
         final X509Data x509Data = keyInfoFactory.newX509Data(Collections.singletonList(certificate));
         final KeyInfo keyInfo = keyInfoFactory.newKeyInfo(Collections.singletonList(x509Data));
 
-        //final Element qualifyingPropertiesElement = buildQualifyingProperties(document,
-        //        XAdESUtil.QUALIFYING_PROPERTIES_ID);
-        //final DOMStructure qualifyingPropertiesObject = new DOMStructure(qualifyingPropertiesElement);
-        //final XMLObject qualifyingPropertiesXMLObject = xmlSignatureFactory.newXMLObject(
-         //       Collections.singletonList(qualifyingPropertiesObject), null, null, null);
+        final Element qualifyingPropertiesElement = buildQualifyingProperties(document,
+               "DPI_OECD");
+        final DOMStructure qualifyingPropertiesObject = new DOMStructure(qualifyingPropertiesElement);
+        final XMLObject qualifyingPropertiesXMLObject = xmlSignatureFactory.newXMLObject(
+               Collections.singletonList(qualifyingPropertiesObject), null, null, null);
 
-        //final List<XMLObject> objects = List.of(qualifyingPropertiesXMLObject);
-        return xmlSignatureFactory.newXMLSignature(signedInfo, keyInfo, null, "xmldsig-" + UUID.randomUUID(), null);
+        final List<XMLObject> objects = List.of(qualifyingPropertiesXMLObject);
+        return xmlSignatureFactory.newXMLSignature(signedInfo, keyInfo, objects, "xmldsig-" + UUID.randomUUID(), null);
     }
 
     protected Element buildQualifyingProperties(final Document document, final String id) {
 
-        final Element qualifyingPropertiesElement = document.createElement(null);
+        final Element qualifyingPropertiesElement = document.createElement(id);
         if (id != null && !id.isEmpty()) {
             qualifyingPropertiesElement.setAttribute(ATTRIBUTE_ID, id);
             qualifyingPropertiesElement.setIdAttribute(ATTRIBUTE_ID, true);

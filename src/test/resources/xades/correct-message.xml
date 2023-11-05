@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dpi:DPI_OECD xmlns:dpi="urn:oecd:ties:dpi:v1" xmlns:stf="urn:oecd:ties:dpistf:v1"
+<dpi:DPI_OECD id="DPI_OECD" xmlns:dpi="urn:oecd:ties:dpi:v1" xmlns:stf="urn:oecd:ties:dpistf:v1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
         xsi:schemaLocation="urn:oecd:ties:dpi:v1 ../XSD/DPIXML_v1.0.xsd">
     <dpi:MessageSpec>

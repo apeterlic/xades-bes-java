@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dpi:DPI_OECD xmlns:dpi="urn:oecd:ties:dpi:v1" xmlns:stf="urn:oecd:ties:dpistf:v1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+        xsi:schemaLocation="urn:oecd:ties:dpi:v1 ../XSD/DPIXML_v1.0.xsd">
+    <dpi:MessageSpec>
+        <dpi:TransmittingCountry>HR</dpi:TransmittingCountry>
+        <dpi:ReceivingCountry>HR</dpi:ReceivingCountry>
+        <dpi:MessageType>DPI</dpi:MessageType>
+        <dpi:MessageRefId>HR2023HR29025007</dpi:MessageRefId>
+        <dpi:MessageTypeIndic>DPI401</dpi:MessageTypeIndic>
+        <dpi:ReportingPeriod>2023-10-31</dpi:ReportingPeriod>
+        <dpi:Timestamp>2024-02-28T00:00:00.000</dpi:Timestamp>
+    </dpi:MessageSpec>
+    <dpi:DPIBody>
+        <dpi:PlatformOperator>
+            <dpi:ResCountryCode>BE</dpi:ResCountryCode>
+            <dpi:TIN issuedBy="BE">155266323</dpi:TIN>
+            <dpi:VAT>BE0254532255</dpi:VAT>
+            <dpi:Name>Major Platform Company</dpi:Name>
+            <dpi:Address legalAddressType="OECD304">
+                <dpi:CountryCode>BE</dpi:CountryCode>
+                <dpi:AddressFix>
+                    <dpi:Street>Kasterleesteenweg</dpi:Street>
+                    <dpi:BuildingIdentifier>106</dpi:BuildingIdentifier>
+                    <dpi:PostCode>2431</dpi:PostCode>
+                    <dpi:City>Veerle</dpi:City>
+                    <dpi:CountrySubentity>Antwerp</dpi:CountrySubentity>
+                </dpi:AddressFix>
+            </dpi:Address>
+            <dpi:Nexus>RPONEX1</dpi:Nexus>
+            <dpi:DocSpec>
+                <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+                <stf:DocRefId>HR2023HR1256631</stf:DocRefId>
+            </dpi:DocSpec>
+        </dpi:PlatformOperator>
+        <dpi:ReportableSeller>
+            <dpi:Identity>
+                <dpi:EntitySeller>
+                    <dpi:Standard>
+                        <dpi:EntSellerID>
+                            <dpi:ResCountryCode>HR</dpi:ResCountryCode>
+                            <dpi:TIN issuedBy="HU">54122512</dpi:TIN>
+                            <dpi:IN INType="BRN" issuedBy="HU">54885221</dpi:IN>
+                            <dpi:VAT>HU71024167</dpi:VAT>
+                            <dpi:Name>Mickael's Angel</dpi:Name>
+                            <dpi:Address legalAddressType="OECD301">
+                                <dpi:CountryCode>HU</dpi:CountryCode>
+                                <dpi:AddressFree>Hegyalja út 96, 3994 Kishuta
+                                </dpi:AddressFree>
+                            </dpi:Address>
+                        </dpi:EntSellerID>
+                        <dpi:FinancialIdentifier>
+                            <dpi:Identifier AccountNumberType="IBAN">
+                                HU75109180016699176494723211
+                            </dpi:Identifier>
+                            <dpi:AccountHolderName>Theo Lanners</dpi:AccountHolderName>
+                        </dpi:FinancialIdentifier>
+                        <dpi:PermanentEstablishments>
+                            <dpi:PermanentEstablishment>HU</dpi:PermanentEstablishment>
+                        </dpi:PermanentEstablishments>
+                    </dpi:Standard>
+                </dpi:EntitySeller>
+            </dpi:Identity>
+            <dpi:RelevantActivities>
+                <dpi:ImmovableProperty>
+                    <dpi:PropertyListing>
+                        <dpi:Address legalAddressType="OECD302">
+                            <dpi:CountryCode>HU</dpi:CountryCode>
+                            <dpi:AddressFree>30, Árpád fejedelem útja - 1172 Budapest
+                            </dpi:AddressFree>
+                        </dpi:Address>
+                        <dpi:LandRegistrationNumber>TGL548895</dpi:LandRegistrationNumber>
+                        <dpi:Consideration>
+                            <dpi:ConsQ1 currCode="EUR">1520</dpi:ConsQ1>
+                            <dpi:ConsQ2 currCode="EUR">465</dpi:ConsQ2>
+                            <dpi:ConsQ3 currCode="EUR">365</dpi:ConsQ3>
+                            <dpi:ConsQ4 currCode="EUR">1245</dpi:ConsQ4>
+                        </dpi:Consideration>
+                        <dpi:NumberOfActivities>
+                            <dpi:NumbQ1>20</dpi:NumbQ1>
+                            <dpi:NumbQ2>10</dpi:NumbQ2>
+                            <dpi:NumbQ3>7</dpi:NumbQ3>
+                            <dpi:NumbQ4>18</dpi:NumbQ4>
+                        </dpi:NumberOfActivities>
+                        <dpi:Fees>
+                            <dpi:FeesQ1 currCode="EUR">350</dpi:FeesQ1>
+                            <dpi:FeesQ2 currCode="EUR">321</dpi:FeesQ2>
+                            <dpi:FeesQ3 currCode="EUR">212</dpi:FeesQ3>
+                            <dpi:FeesQ4 currCode="EUR">330</dpi:FeesQ4>
+                        </dpi:Fees>
+                        <dpi:Taxes>
+                            <dpi:TaxQ1 currCode="EUR">200</dpi:TaxQ1>
+                            <dpi:TaxQ2 currCode="EUR">100</dpi:TaxQ2>
+                            <dpi:TaxQ3 currCode="EUR">70</dpi:TaxQ3>
+                            <dpi:TaxQ4 currCode="EUR">180</dpi:TaxQ4>
+                        </dpi:Taxes>
+                        <dpi:PropertyType>DPI904</dpi:PropertyType>
+                        <dpi:RentedDays>79</dpi:RentedDays>
+                    </dpi:PropertyListing>
+                </dpi:ImmovableProperty>
+                <dpi:PersonalServices>
+                    <dpi:Consideration>
+                        <dpi:ConsQ1 currCode="EUR">26552</dpi:ConsQ1>
+                        <dpi:ConsQ2 currCode="EUR">23365</dpi:ConsQ2>
+                        <dpi:ConsQ3 currCode="EUR">21566</dpi:ConsQ3>
+                        <dpi:ConsQ4 currCode="EUR">22544</dpi:ConsQ4>
+                    </dpi:Consideration>
+                    <dpi:NumberOfActivities>
+                        <dpi:NumbQ1>20</dpi:NumbQ1>
+                        <dpi:NumbQ2>20</dpi:NumbQ2>
+                        <dpi:NumbQ3>20</dpi:NumbQ3>
+                        <dpi:NumbQ4>20</dpi:NumbQ4>
+                    </dpi:NumberOfActivities>
+                    <dpi:Fees>
+                        <dpi:FeesQ1 currCode="EUR">1200</dpi:FeesQ1>
+                        <dpi:FeesQ2 currCode="EUR">1250</dpi:FeesQ2>
+                        <dpi:FeesQ3 currCode="EUR">1002</dpi:FeesQ3>
+                        <dpi:FeesQ4 currCode="EUR">1652</dpi:FeesQ4>
+                    </dpi:Fees>
+                    <dpi:Taxes>
+                        <dpi:TaxQ1 currCode="EUR">2655</dpi:TaxQ1>
+                        <dpi:TaxQ2 currCode="EUR">1899</dpi:TaxQ2>
+                        <dpi:TaxQ3 currCode="EUR">1632</dpi:TaxQ3>
+                        <dpi:TaxQ4 currCode="EUR">1544</dpi:TaxQ4>
+                    </dpi:Taxes>
+                </dpi:PersonalServices>
+            </dpi:RelevantActivities>
+            <dpi:DocSpec>
+                <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+                <stf:DocRefId>HR2023HR1255614</stf:DocRefId>
+            </dpi:DocSpec>
+        </dpi:ReportableSeller>
+    </dpi:DPIBody>
+</dpi:DPI_OECD>

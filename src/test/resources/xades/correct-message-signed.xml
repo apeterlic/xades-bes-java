@@ -1,7 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
     <soapenv:Header/>
     <soapenv:Body>
-        <dpi:DPI_OECD xmlns:dpi="urn:oecd:ties:dpi:v1" xmlns:stf="urn:oecd:ties:dpistf:v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="DPI_OECD" version="1.0" xsi:schemaLocation="urn:oecd:ties:dpi:v1 ../XSD/DPIXML_v1.0.xsd">
+        <dpi:DPI_OECD xmlns:dpi="urn:oecd:ties:dpi:v1" xmlns:stf="urn:oecd:ties:dpistf:v1"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="DPIOECD"
+                      version="1.0"
+                      xsi:schemaLocation="urn:oecd:ties:dpi:v1 ../XSD/DPIXML_v1.0.xsd">
             <dpi:MessageSpec>
                 <dpi:TransmittingCountry>HR</dpi:TransmittingCountry>
                 <dpi:ReceivingCountry>HR</dpi:ReceivingCountry>
@@ -131,6 +135,6 @@
                     </dpi:DocSpec>
                 </dpi:ReportableSeller>
             </dpi:DPIBody>
-            <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-0212f1b8-e5d1-48d3-b01f-d14638fa4ae0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#DPI_OECD"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Z+5/7tajQL5XXLh/nWBq2uI98kbxs6ZgxtSyZlaBLTA=</DigestValue></Reference></SignedInfo><SignatureValue>aEvUOYBmntCvJjzQW7GE4iQlMcs5pGXsRjFd16nOOGE7p3R0T+frfzEESZUww54z9urIuvQyIfltp/gYdUYSCizF1um+ckhWs61Xhf4zCZwO6H0r990bFWeN0eCa0IeVFR8OxePvZcIK7vOgMEgG79UaKT+g4eRSxN4ZM5qhAgbFmbWsTlGf0FkA2lYKV5dDDfVGSdvjI9/Q2MLEntR5RNr1zpAdvzb+Fo0SJ96Ea0qKin2vY87K9+BDrXxkqmwjGIJRC7OMUfTQ9umoQvJ5kKYHlvYwDkGf99ke/JNf4p7t5LRIYBg6aKnrADILngzaXVf0SUDiABdejUlWP/nhNg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIDRTCCAi2gAwIBAgIEQjgrajANBgkqhkiG9w0BAQsFADBTMQswCQYDVQQGEwJpdDELMAkGA1UECBMCcm0xDTALBgNVBAcTBHJvbWUxDDAKBgNVBAoTA2RldzEMMAoGA1UECxMDZGV3MQwwCgYDVQQDEwNkZXcwHhcNMjAxMTEzMTQzMDI2WhcNNDAxMTE0MTQzMDI2WjBTMQswCQYDVQQGEwJpdDELMAkGA1UECBMCcm0xDTALBgNVBAcTBHJvbWUxDDAKBgNVBAoTA2RldzEMMAoGA1UECxMDZGV3MQwwCgYDVQQDEwNkZXcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCwT1J/myUxkngvu0GR6SMnBhb/CUeuCgqzSabZhW3CFBwdYwHOp9omfrJiVm81rHvD41TU5ys+EWZn3EeohdvogtlQk6kNLE7KBnXaGHiWmnu4JgeGimuWwg35BGwh0TrVBCnP6RnnUXjJzu6i5Lo2FuFW6z7RbZyBDC8K2+l0+wJRZW8LJvmOE8vLxxUN+aLWI9TYmk55jpmcAU1Gzi+QGVkdFIkfHk5AiViJRx+Fk28NE9EGHE+MYABzwpUwdeXCYe79l2IeDUdPSPLZpwYdn3qhCWvOvCZ+JzancFvd8h6UlW//LhmzdoUMurSbjqMSOdYh9M32cjWnuLPvpftBAgMBAAGjITAfMB0GA1UdDgQWBBRRgluPbGEZ0C6ptwS/J6quOrxjrzANBgkqhkiG9w0BAQsFAAOCAQEAO5dEtpYFQLFvmaTmPdYR8zVznEOVlZUcmax0ttZZfKGnSqm8l316nuIW2gnkRFwak55DOfEh7Z7WTxf1a3yFeOC9fB9zfb1GCvL9umoUWPylU1Wac+cNGN5NHEnrZLsjd++BEcCetZZQHVGT9gfOZKXKt5d0NsdlB7pPNLu5BVxiNdspR08qrZaQl92m+al4bbvwXo/3vg6xFtmqn1jE1Dl9hj+/SSrMUj0kQ6lcW3Ju8U6kLc2Dnfygw1m+pAD8+Y2gOmMg/VNtuRRn0SVv+jKubfdlG5ydx/oib3D2IMgk2BUf2lDMU4fvU3LdpMPkD9kDt/dY13PDMuTIeDMOdA==</X509Certificate></X509Data></KeyInfo><Object><DPI_OECD Id="DPI_OECD"><SignedProperties><SignedSignatureProperties><SigningTime>2023-11-05T09:38:55.398021</SigningTime></SignedSignatureProperties></SignedProperties></DPI_OECD></Object></Signature></dpi:DPI_OECD>
+        </dpi:DPI_OECD>
     </soapenv:Body>
 </soapenv:Envelope>
